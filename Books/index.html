@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books online</title>
+  <link rel="stylesheet" href="build/css/all.css"/>
+  <link rel="stylesheet" href="build/css/jquery.bxslider.css"/>
+
+</head>
+<body>
+<header>
+  <div class="top-panel">
+    <div class="wrapper">
+      <ul>
+        <li><a href="#">Sing in</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Order Status</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-header">
+    <div class="wrapper">
+      <div class="logo-container">
+        <a href="#"><img class="logo" src="develop/img/mainLogo.png" alt=""/></a>
+        <div class="search-container search-container--desktop">
+          <div>
+            <input type="text" class="search-field search-field--desktop"/>
+            <button class="search-btn search-btn--desktop"></button>
+          </div>
+        </div>
+        <div class="shop-cart-container shop-cart-container--desktop">
+          <div>
+            <div class="shop-cart">
+              <img class="shop-cart__icon" src="build/img/cart-icon.png" alt="">
+              <span class="shop-cart__title">Your cart</span>
+              <span class="shop-cart__items">(2 items)</span>
+              <span class="shop-cart__value">126.00$</span>
+              <button class="shop-cart__checkout">Checkout</button>
+            </div>
+            <div class="wish-list">
+              <div class="wish-list__star-icon"></div>
+              <p class="wish-list__title">Wish list</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <button class="menu-show-btn"></button>
+        <button class="search-show-btn"></button>
+        <button class="shop-cart-show-btn"></button>
+      </div>
+      <div class="show-mobile-nav-container">
+        <div class="menu-container">
+          <nav>
+            <ul class="menu--mobile">
+              <li><a href="">Computers</a></li>
+              <li><a href="">Cooking</a></li>
+              <li><a href="">Education</a></li>
+              <li><a href="">Fictions</a></li>
+              <li><a href="">Health</a></li>
+              <li><a href="">Mathematics</a></li>
+              <li><a href="">Medicals</a></li>
+              <li><a href="">Reference</a></li>
+              <li><a href="">Science</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="search-container search-container--mobile">
+          <div>
+            <input type="text" class="search-field search-field--mobile"/>
+            <button class="search-btn"></button>
+          </div>
+        </div>
+        <div class="shop-cart-container shop-cart-container--mobile">
+          <div>
+            <div class="shop-cart">
+              <img class="shop-cart__icon" src="build/img/cart-icon.png" alt="">
+              <span class="shop-cart__title">Your cart</span>
+              <span class="shop-cart__items">(2 items)</span>
+              <span class="shop-cart__value">126.00$</span>
+              <button class="shop-cart__checkout">Checkout</button>
+            </div>
+            <div class="wish-list">
+              <div class="wish-list__star-icon"></div>
+              <p class="wish-list__title">Wish list</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="menu">
+  <div class="wrapper">
+    <ul class="menu--mobile menu--desktop">
+      <li><a href="">Computers</a></li>
+      <li><a href="">Cooking</a></li>
+      <li><a href="">Education</a></li>
+      <li><a href="">Fictions</a></li>
+      <li><a href="">Health</a></li>
+      <li><a href="">Mathematics</a></li>
+      <li><a href="">Medicals</a></li>
+      <li><a href="">Reference</a></li>
+      <li><a href="">Science</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="wrapper">
+  <section class="slider-container">
+
+    <ul class="bxslider">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+
+  </section>
+  <main>
+    <div class="main__sidebar">
+      <h3 class="sidebar__title">Categories</h3>
+      <ul class="sidebar__list">
+        <li class="sidebar__list--active"><p>All</p></li>
+        <li><p>Fiction&Literature</p>
+          <ul class="sidebar__sublist">
+            <li><a href="">Children</a></li>
+            <li><a href="">Science Fiction</a></li>
+            <li><a href="">Fantasy</a></li>
+            <li><a href="">Mystery</a></li>
+            <li><a href="">Romance</a></li>
+            <li><a href="">Horror</a></li>
+            <li><a href="">Poetry</a></li>
+            <li><a href="">Literature</a></li>
+            <li><a href="">Crime</a></li>
+          </ul>
+        </li>
+        <li><p>Non Fiction</p>
+          <ul class="sidebar__sublist">
+            <li><a href="">Comic</a></li>
+            <li><a href="">Cook</a></li>
+            <li><a href="">Psychology</a></li>
+            <li><a href="">Medical</a></li>
+            <li><a href="">Art</a></li>
+            <li><a href="">Photography</a></li>
+            <li><a href="">Law</a></li>
+            <li><a href="">History</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Computers</a></li>
+          </ul>
+        </li>
+        <li><p>Other</p>
+          <ul class="sidebar__sublist">
+            <li><a href="">Baby</a></li>
+            <li><a href="">Sex</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Science</a></li>
+            <li><a href="">Sport</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main__content">
+      <div class="tabs">
+        <ul>
+          <li filter-attr="id" class="tabs__active">Best Sellers</li>
+          <li filter-attr="year">New Arrivals</li>
+          <li filter-attr="used">Used Books</li>
+          <li filter-attr="specialOffer">Special Offers</li>
+        </ul>
+      </div>
+      <div class="tabs-container">
+        <script id="books-template" type="text/x-handlebars-template">
+          <p class="books-amount">Found {{books.length}} books:</p>
+          {{#each books}}
+          <a href="#" class="book">
+            <img class="book__image" src="{{image}}" alt="">
+            <p class="book__title">{{title}}</p>
+            <p class="book__price">{{price}}$</p>
+            {{#if specialOffer}}
+            <div class="book__sp-offer">{{specialOffer.percent}}%
+              <p>off</p>
+            </div>
+            {{/if}}
+          </a>
+          {{/each}}
+        </script>
+      </div>
+    </div>
+  </main>
+</div>
+<footer>
+  <div class="wrapper">
+    <ul class="footer__list">
+      <li>
+        <h4>Biography & True Stories</h4>
+        <ul class="footer__sublist">
+          <li><a href="#">General</a></li>
+          <li><a href="#">Diaries, Letters & Journals</a></li>
+          <li><a href="#">Memoirs</a></li>
+          <li><a href="#">True Stories</a></li>
+          <li><a href="#">General Exam</a></li>
+          <li><a href="#">GK Titles</a></li>
+          <li><a href="#">Medical Entrance</a></li>
+          <li><a href="#">Other Entrance Exams</a></li>
+          <li><a href="#">PG Entrance Examinations</a></li>
+          <li><a href="#">Self-help Titles</a></li>
+          <li><a href="#">Sociology</a></li>
+        </ul>
+      </li>
+      <li>
+        <h4>Professional & Reference</h4>
+        <ul class="footer__sublist">
+          <li><a href="#">Academic and Reference</a></li>
+          <li><a href="#">Business Trade</a></li>
+          <li><a href="#">Engineering and Computer Science</a></li>
+          <li><a href="#">Humanities, Sciences and Languages </a></li>
+          <li><a href="#">Introductions to Computers</a></li>
+          <li><a href="#">Science and Maths</a></li>
+          <li><a href="#">Trade Business</a></li>
+          <li><a href="#">Medical Entrance</a></li>
+          <li><a href="#">Other Entrance Exams</a></li>
+          <li><a href="#">PG Entrance Examinations</a></li>
+          <li><a href="#">Self-help Titles</a></li>
+        </ul>
+      </li>
+      <li>
+        <h4>Earth Sciences</h4>
+        <ul class="footer__sublist">
+          <li><a href="#">GK Titles</a></li>
+          <li><a href="#">Medical Entrance</a></li>
+          <li><a href="#">Other Entrance Exams</a></li>
+          <li><a href="#">PG Entrance Examinations</a></li>
+          <li><a href="#">Self-help Titles</a></li>
+          <li><a href="#">Sociology</a></li>
+          <li><a href="#">Introductions to Computers</a></li>
+          <li><a href="#">Science and Maths</a></li>
+          <li><a href="#">Trade Business</a></li>
+          <li><a href="#">Medical Entrance</a></li>
+          <li><a href="#">Self-help Titles</a></li>
+        </ul>
+      </li>
+      <li>
+        <h4>Mathematics</h4>
+        <ul class="footer__sublist">
+          <li><a href="#">Medical Entrance</a></li>
+          <li><a href="#">Other Entrance Exams</a></li>
+          <li><a href="#">PG Entrance Examinations</a></li>
+          <li><a href="#">Self-help Titles</a></li>
+          <li><a href="#">Sociology</a></li>
+          <li><a href="#">Science and Maths</a></li>
+          <li><a href="#">Trade Business</a></li>
+          <li><a href="#">Medical Entrance</a></li>
+          <li><a href="#">Other Entrance Exams</a></li>
+          <li><a href="#">PG Entrance Examinations</a></li>
+          <li><a href="#">Self-help Titles</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="bank-logos">
+    <div class="wrapper">
+      <p class="bank-logos__title">We accept all major Credit Card/Debit Card/Internet Banking </p>
+      <div class="bank-logos__images">
+        <img src="develop/img/mastercard-logo.png" alt="logo here">
+        <img src="develop/img/american-express-logo.png" alt="logo here">
+        <img src="develop/img/visa-logo.png" alt="logo here">
+      </div>
+    </div>
+  </div>
+  <div  class="footer__rights">
+    <div class="wrapper">
+      <p>Conditions of Use Privacy Notice © 2012-2017, Booksonline, Inc. or its affiliates </p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="build/js/handlebars-v4.0.11.js"></script>
+<script src="build/js/jquery-3.2.0.min.js"></script>
+<script src="build/js/jquery.bxslider.min.js"></script>
+<script src="build/js/all.min.js"></script>
+<!--<script src="develop/js/script.js"></script>-->
+</body>
+</html>

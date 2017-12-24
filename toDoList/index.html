@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDoList</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet'
+        type='text/css'>
+  <script data-main="js/app.js" src=" js/require.js"></script>
+
+
+</head>
+<body>
+
+
+<script type="text/templete" id="wapper-tmpl">
+
+  <div class="wrapper">
+    <h1 class="title">ToDoList</h1>
+
+     <div class="controls clearfix">
+      <input type="text" class="item-value"placeholder="What needs to be done?"/>
+      <div class="button-box">
+        <button class="item-add active"></button>
+        <button class="item-replace "></button>
+      </div>
+     </div>
+     <h3>Task</h3>
+    <ul class="list-item"></ul>
+  </div>
+
+
+</script>
+
+
+<script type="text/templete" id="list-tmpl">
+
+  <% for(var i = 0; i <data.length; i++ ){ %>
+    <li class="list-value clearfix" > <%= data[i] %>
+      <div class="button-box">
+        <button data-value="<%= data[i] %>" class="change-button"></button>
+        <button data-value="<%= data[i] %>" class="delete-button"></button>
+      </div>
+    </li>
+  <% }; %>
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+  behavior: url(public/dist/PIE.htc);
+}
+
+@mixin respond-to($media) {
+  @if $media == mobiles {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 960px) { @content; }
+  }
+}

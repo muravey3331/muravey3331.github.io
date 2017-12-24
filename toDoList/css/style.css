@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background: url("../img/tochki_kubiki_fon_svet_91691_1920x1080.jpg") no-repeat top #353956;
+
+}
+
+.wrapper {
+  margin: 60px auto;
+  width: 320px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 rgba(100, 100, 100, 0.5);
+}
+
+.title {
+  font-size: 26px;
+  text-align: center;
+}
+
+.controls {
+  margin: 10px 0 30px;
+}
+
+.item-value {
+  width: 230px;
+  line-height: 32px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid #d2e0ef;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.item-value:focus {
+  border-bottom: 1px solid royalblue;
+}
+
+.button-box {
+  float: right;
+}
+
+.item-add,
+.item-replace,
+.change-button,
+.delete-button {
+  background: #fff;
+  border: none;
+}
+
+.item-add,
+.item-replace {
+  display: none;
+  margin: 2px 10px 2px 2px;
+  height: 28px;
+  width: 28px;
+  padding: 5px;
+}
+
+
+
+.active {
+  display: block;
+}
+
+.item-add {
+  background: url(../img/add.svg);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 40px;
+}
+
+.item-replace {
+  background: url(../img/replace.svg);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  height: 40px;
+  width: 40px;
+}
+.item-add:hover,
+.item-replace:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+h3 {
+  margin: 10px auto;
+  width: 70px;
+  border-bottom: 1px solid royalblue;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 1px;
+  padding: 0 5px 0 20px;
+  line-height: 35px;
+  border-bottom: 1px solid #b5c8ef;
+}
+
+li:last-child {
+  border: none;
+}
+
+.change-button,
+.delete-button {
+  width: 16px;
+  height: 16px;
+  opacity: 0.1;
+  transition: 0.3s;
+}
+
+.change-button {
+  background-image: url(../img/pen.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.delete-button {
+  background-image: url(../img/basket.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.change-button:hover,
+.delete-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}

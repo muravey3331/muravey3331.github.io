@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+/node_modules
+/src/css/reset.css
+/src/css/style.css
+/public/sprites/sprite.css

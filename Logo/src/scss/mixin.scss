@@ -1,0 +1,31 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//@mixin box-shadow($x, $y, $z, $q, $r, $g ,$b ,$a) {
+//  -webkit-box-shadow: $x $y $z $q rgba($r, $g, $b, $a);
+//  -moz-box-shadow: $x $y $z $q rgba $r, $g, $b, $a);
+//  -ms-box-shadow: $x $y $z $q rgba $r, $g, $b, $a);
+//  box-shadow: $x $y $z $q rgba($r, $g, $b, $a);
+//}
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (min-width: 361px) {
+      @content;
+    }
+  }
+  @if $media == tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
+

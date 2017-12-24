@@ -1,0 +1,142 @@
+{"books":[
+  {
+    "id": 1,
+    "year": 2011,
+    "image":"develop/img/001.png",
+    "title": "The Hare With Amber Eyes",
+    "price": 50,
+    "specialOffer": {
+      "percent": 30
+    },
+    "used": true
+
+  },
+  {
+    "id": 2,
+    "year": 2012,
+    "image":"develop/img/002.png",
+    "title": "The war of Art",
+    "price": 55,
+    "specialOffer": false,
+    "used": true
+  },
+  {
+    "id": 3,
+    "year": 2001,
+    "image": "develop/img/003.png",
+    "title": "The Hare With Amber Eyes",
+    "price": 70,
+    "specialOffer": false,
+    "used": true
+  },
+  {
+    "id": 4,
+    "year": 2017,
+    "image": "develop/img/004.png",
+    "title": "The Immortals of Meluha",
+    "price": 75,
+    "specialOffer": {
+      "percent": 25
+    }
+  },
+  {
+    "id": 5,
+    "year": 2013,
+    "image":"develop/img/005.png",
+    "title": "The war of Art",
+    "price": 120,
+    "specialOffer": false,
+    "used": true
+  },
+  {
+    "id": 6,
+    "year": 2016,
+    "image":"develop/img/006.png",
+    "title": "Life Is What You Make It",
+    "price": 30,
+    "specialOffer": false
+  },
+  {
+    "id": 7,
+    "year": 2010,
+    "image":"develop/img/007.png",
+    "title": "The Hare With Amber Eyes",
+    "price": 80,
+    "specialOffer": {
+      "percent": 50
+    }
+  },
+  {
+    "id": 8,
+    "year": 2008,
+    "image":"develop/img/008.png",
+    "title": "The war of Art",
+    "price": 30,
+    "specialOffer": false,
+    "used": true
+  },
+  {
+    "id": 9,
+    "year": 2010,
+    "image":"develop/img/009.png",
+    "title": "The Hare With Amber Eyes",
+    "price": 90,
+    "specialOffer": false,
+    "used": true
+  },
+  {
+    "id": 10,
+    "year": 2009,
+    "image":"develop/img/010.png",
+    "title": "The Immortals of Meluha",
+    "price": 110,
+    "specialOffer": {
+      "percent": 40
+    }
+  },
+  {
+    "id": 11,
+    "year": 2014,
+    "image":"develop/img/011.png",
+    "title": "The Hare With Amber Eyes",
+    "price": 160,
+    "specialOffer": false,
+    "used": true
+  },
+  {
+    "id": 12,
+    "year": 2007,
+    "image":"develop/img/006.png",
+    "title": "Life Is What You Make It",
+    "price": 50,
+    "specialOffer": {
+      "percent": 45
+    }
+  },
+  {
+    "id": 13,
+    "year": 2015,
+    "image":"develop/img/013.png",
+    "title": "The war of Art",
+    "price": 120,
+    "specialOffer": false
+  },
+  {
+    "id": 14,
+    "year": 2013,
+    "image":"develop/img/014.png",
+    "title": "Life Is What You Make It",
+    "price": 130,
+    "specialOffer": false
+  },
+  {
+    "id": 15,
+    "year": 2015,
+    "image":"develop/img/015.png",
+    "title": "The Immortals of Meluha",
+    "price": 310,
+    "specialOffer": false
+  }
+]}
+
+

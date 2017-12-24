@@ -1,0 +1,25 @@
+{
+  "name": "final_exam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imageoptim": "^1.0.4",
+    "gulp-respond": "^1.0.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-spritesmith": "0.0.2",
+    "gulp.spritesmith": "^6.2.1"
+  },
+  "dependencies": {
+    "masonry-layout": "^4.0.0"
+  },
+  "description": ""
+}

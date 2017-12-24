@@ -1,0 +1,604 @@
+@import "variables";
+@import "mixin";
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../build/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "SegoeWP";
+  src: url(../../build/fonts/SegoeWPN.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../../build/fonts/helveticaneuecyr-thin.otf);
+}
+
+//HEADER
+.wrapper {
+  margin: 0 auto;
+  @include desktop {
+    width: 1024px;
+  }
+}
+
+.top-panel {
+  background: #424242;
+  text-align: center;
+  @include tablet {
+    text-align: right;
+  }
+}
+
+.top-panel li {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 30px;
+}
+
+.top-panel a {
+  text-decoration: none;
+  color: white;
+  font: 12px Arial, sans-serif;
+}
+
+.top-panel a:hover {
+  color: $green;
+}
+
+.main-header {
+  background: #ebebeb;
+  background: linear-gradient(to top, #ebebeb 2%, #ffffff 100%);
+  @include tablet {
+    height: 110px;
+  }
+}
+
+//Logo
+.header__logo-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  @include tablet {
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  box-sizing: border-box;
+  padding: 20px 0 15px;
+  @include tablet {
+    padding-left: 10px;
+    display: block;
+  }
+
+}
+
+//Search
+div .search-container--desktop {
+  display: none;
+  @include tablet {
+    display: block;
+    padding-top: 40px;
+    width: 320px;
+  }
+  @include desktop {
+    width: 450px;
+  }
+}
+
+div .search-field--desktop {
+  width: 80%;
+  @include desktop {
+    width: 90%;
+  }
+}
+
+div .search-btn--desktop {
+  width: 20%;
+  @include desktop {
+    width: 10%;
+  }
+}
+
+div .shop-cart-container--desktop {
+  display: none;
+  @include tablet {
+    display: block;
+    width: 350px;
+  }
+}
+
+div .shop-cart-container--desktop > div {
+  padding: 15px 5px;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $green;
+}
+
+.mobile-nav button {
+  border: none;
+  width: 32%;
+  height: 36px;
+  border-right: 1px solid #ddd;
+}
+
+.mobile-nav button:last-child {
+  border-right: none;
+}
+
+.mobile-nav button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-show-btn {
+  background: url("../../develop/img/menu icon.png") no-repeat center;
+}
+
+.search-show-btn {
+  background: url("../../develop/img/search-icon.png") no-repeat center;
+}
+
+.shop-cart-show-btn {
+  background: url("../../develop/img/cart-icon.png") no-repeat center;
+}
+
+.show-mobile-nav-container {
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+}
+
+.shop-cart-container {
+  display: none;
+}
+
+.shop-cart-container > div {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+
+.shop-cart {
+  width: 60%;
+  border-right: 1px solid #c6c6c6;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.shop-cart__icon {
+  display: none;
+  @include tablet {
+    display: inline
+  }
+}
+
+.shop-cart > span {
+  font-family: "SegoeWP", Arial, sans-serif;
+  color: $grey;
+}
+
+.shop-cart__title {
+  font-size: 23px;
+}
+
+.shop-cart__items {
+  font-size: 13px;
+}
+
+.shop-cart__value {
+  font-size: 27px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.shop-cart__checkout {
+  position: relative;
+  top: -6px;
+  background: linear-gradient(0deg, rgba(37, 37, 37, 1) 0%, rgba(65, 65, 65, 1) 100%);
+  border: 1px solid #252525;
+  border-radius: 3px;
+  height: 28px;
+  width: 82px;
+  color: #fff;
+}
+
+.shop-cart__checkout:hover {
+  color: #eee;
+}
+
+.wish-list {
+  width: 40%;
+  padding-top: 5px;
+}
+
+.wish-list__star-icon {
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  background: url("../../develop/img/star-icon.png") no-repeat;
+}
+
+.wish-list__title {
+  margin: 0 auto;
+  font: 21px "SegoeWP", Arial, sans-serif;
+  color: $grey;
+  text-align: center;
+  position: relative;
+}
+
+.wish-list__title:after {
+  content: "20";
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  margin-left: 30px;
+  width: 28px;
+  height: 16px;
+  border-radius: 8px;
+  background: $green;
+  text-align: center;
+  font: 13px "SegoeWP", Arial, sans-serif;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.search-container {
+  display: none;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.search-container > div {
+  display: flex;
+}
+
+.search-field {
+  padding-left: 10px;
+  height: 36px;
+  width: 85%;
+  border: 2px solid $green;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "SegoeWP", Arial, sans-serif;
+}
+
+.search-btn {
+  background: url("../../develop/img/search-64.png") no-repeat center $green;
+  background-size: contain;
+  height: 36px;
+  width: 15%;
+  border: none;
+  color: white;
+}
+
+.search-btn:hover {
+  opacity: 0.8;
+}
+
+.menu--mobile {
+  padding: 5px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.menu--mobile > li > a {
+  display: block;
+  padding-left: 12px;
+  line-height: 36px;
+  text-decoration: none;
+  font-family: "SegoeWP", Arial, sans-serif;
+  font-size: 16px;
+  color: $dark-grey;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu--mobile a:hover {
+  background: linear-gradient(0deg, rgba(122, 179, 97, 1) 0%, rgba(146, 215, 116, 1) 100%);
+  color: white;
+
+}
+
+//NAV
+
+.menu--desktop {
+  display: none;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  @include tablet {
+    display: flex;
+  }
+}
+
+.menu--desktop > li > a {
+  border: none;
+  padding: 5px 10px;
+  @include desktop {
+    padding: 5px 24px
+  }
+}
+
+//SLIDER
+
+//MAIN
+main {
+  display: flex;
+  padding-top: 10px;
+}
+
+//Sidebar
+.main__sidebar {
+  display: none;
+  margin: 0 3px;
+  //width: 190px;
+  border: 1px solid $light-grey;
+  padding: 10px 0;
+  font-family: SegoeWP, sans-serif;
+  color: $grey;
+  @include tablet {
+    display: block;
+
+  }
+}
+
+.sidebar__title {
+  padding: 0 22px;
+  font-size: 24px;
+  font-weight: 300;
+
+}
+
+.sidebar__list > li {
+  margin: 5px 0;
+  list-style: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sidebar__list p {
+  padding: 0 22px;
+}
+
+.sidebar__sublist > li {
+  padding: 0 22px;
+  list-style: none;
+
+  color: $grey;
+}
+
+.sidebar__sublist a {
+  display: block;
+  padding: 2px 0;
+  border-bottom: 1px solid $light-grey;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: inherit;
+}
+
+.sidebar__list--active,
+.sidebar__list p:hover,
+.sidebar__sublist li:hover {
+  background: linear-gradient(0deg, rgba(122, 179, 97, 1) 0%, rgba(146, 215, 116, 1) 100%);
+  color: #fff;
+}
+
+.sidebar__sublist li:hover > a {
+  border-bottom: 1px solid rgba(122, 179, 97, 1);
+}
+
+//Tabs
+.main__content {
+  margin: 0 3px;
+}
+
+.tabs {
+}
+
+.tabs > ul {
+  display: flex;
+
+}
+
+.tabs > ul > li {
+  border: 1px solid $light-grey;
+  border-right: none;
+  padding: 10px 5px;
+  background: linear-gradient(to bottom, rgba(249, 249, 249, 1) 0%, rgba(226, 226, 226, 1) 100%);
+  list-style: none;
+  font: 14px "Helvetica", sans-serif;
+  color: $grey;
+  text-align: center;
+  @include tablet {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
+
+.tabs > ul > li:last-child {
+  border-right: 1px solid $light-grey;
+}
+
+.tabs > ul > li:hover {
+  cursor: pointer;
+}
+
+.tabs > ul > li.tabs__active {
+  color: $dark-grey;
+  background: #fff;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+.tabs-container {
+  margin: -1px 0;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid $light-grey;
+}
+.books-amount{
+  width: 100%;
+  font: 16px "SegoeWP";
+  color: $green;
+  padding: 0 0 20px 20px ;
+}
+.book {
+  display: block;
+  position: relative;
+  margin: 0 0 20px;
+  text-align: center;
+  width: 130px;
+  font: 15px "Segoe UI Semilight", Arial, sans-serif;
+  text-decoration: none;
+  @include tablet {
+    margin: 0 10px 20px;
+  }
+
+}
+
+.book:hover > .book__image {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.book__image {
+  padding: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.1s;
+}
+
+.book__title {
+  height: 40px;
+  color: $grey;
+  line-height: 20px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.book__price {
+  font-size: 1.5em;
+  color: $red;
+}
+
+.book__sp-offer {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  padding-top: 8px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: $red;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+  font: 18px "Segoe UI Semibold", sans-serif;
+  line-height: 20px;
+}
+
+.book__sp-offer > p {
+  font: 13px "SegoeWP";
+  font-weight: 100;
+}
+
+//FOOTER
+
+footer {
+  margin-top: 25px;
+  padding-top: 20px;
+  background: url("../../develop/img/footer-bg.png") center;
+  font-family: "Open Sans", sans-serif;
+  color: #ddd;
+
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 40px;
+
+}
+
+.footer__list li {
+  width: 300px;
+  @include desktop{
+    width: 240px;
+  }
+}
+
+.footer__list h4 {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 24px;
+  @include desktop{
+    margin-top: 0;
+  }
+
+}
+
+.footer__sublist {
+  list-style: none;
+}
+
+.footer__sublist li {
+  margin-top: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__sublist li:last-child {
+  border: none;
+}
+
+.footer__sublist a {
+  display: block;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 13px;
+  transition: 0.1s;
+}
+
+.footer__sublist a:hover {
+  color: $green;
+}
+
+//Bank Logos
+.bank-logos {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px 0 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.bank-logos__title{
+  padding-bottom: 15px;
+}
+.footer__rights{
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
